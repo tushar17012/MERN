@@ -1,0 +1,14 @@
+*{
+  font-family: 'Courier New';
+  font-size: 125%;
+}
+h1{
+  color: #1b74e4;
+}
+.button-enter{
+  background-color: aqua;
+}
+#Search_frn_button{
+  background-color: black;
+  color: white;
+}

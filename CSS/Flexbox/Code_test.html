@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Test</title>
+    <style>
+      /* Flex container styling */
+      .flex-container {
+        display: flex; /* Enables flexbox */
+        flex-wrap: wrap; /* Allows flex items to wrap into multiple lines */
+        flex-direction: row; /* Items are laid out in a row */
+        justify-content: space-around; /* Space items horizontally */
+        align-items: center; /* Align items vertically in the center */
+        border: 2px solid black;
+        height: 300px; /* Container height */
+        width: 800px; /* Container width */
+        padding: 20px;
+        margin: 20px auto; /* Center the container */
+        background-color: #f0f0f0;
+      }
+
+      /* Flex items styling */
+      .flex-item {
+        width: 200px; /* Item width */
+        height: 150px; /* Item height */
+        background-color: lightblue;
+        border: 2px solid black;
+        display: flex; /* Center text inside each item */
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-size: 20px;
+      }
+
+      /* Adjust flex-grow for specific items */
+      #flex-item-2 {
+        /*flex-grow: 1; /* Item 2 grows to take more space */
+      }
+
+      #flex-item-3 {
+        /*flex-grow: 2; /* Item 3 grows even more */
+      }
+
+      /* Hover effect to test transition */
+      .flex-item:hover {
+        background-color: cornflowerblue;
+        transition: background-color 0.1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Flexbox Layout Example</h1>
+
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item" id="flex-item-2">Item 2</div>
+      <div class="flex-item" id="flex-item-3">Item 3</div>
+      <div class="flex-item">Item 4</div>
+      <div class="flex-item">Item 5</div>
+      <div class="flex-item">Item 6</div>
+    </div>
+  </body>
+</html>

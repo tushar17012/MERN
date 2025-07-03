@@ -1,0 +1,24 @@
+/* a:hover[href="#"] {
+  color: red;
+  text-decoration: underline;
+}
+div input:focus [type="text" ] {
+  border-color: rgb(0, 255, 200);
+  background-color: #0dfc5c;
+}
+button:active {
+  background-color: green;
+  color: white;
+}
+ul li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+p:first-child {
+  font-weight: bold;
+}
+p:last-child {
+  color: blue;
+} */
+a:Hover [href="#"] {
+  color: rgb(243, 9, 243);
+}

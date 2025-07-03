@@ -1,0 +1,16 @@
+div{
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+  margin: 20px;
+  background-color: greenyellow;
+  display: inline-flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+/* div:hover{
+  border-radius: 50%;
+}
+div:active{
+  background-color: black;
+} */

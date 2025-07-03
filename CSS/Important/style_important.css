@@ -1,0 +1,15 @@
+p [class="special"] {
+  color: blue;
+}
+
+.special {
+  color: red;
+}
+#header {
+  background-color: yellow !important;
+}
+
+.header {
+  background-color: green;
+}
+

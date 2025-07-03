@@ -1,0 +1,27 @@
+#outer-div {
+  border: 2px solid black;
+  width: 70px;
+  height: 200px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.light-div {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+#inner-red-color {
+  background-color: red;
+}
+
+#yellow-red-color{
+  background-color: yellow;
+}
+
+#green-red-color {
+  background-color: green;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 2 PQs3</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="Sex"> Sex: </label>
+        <span>
+          <input type="radio" name="Sex" id="Male" value="Male" />
+          <label for="Male">Male</label>
+        </span>
+        <span>
+          <input type="radio" name="Sex" id="Female" value="Female" />
+          <label for="Female">Female</label>
+        </span>
+      </div>
+      <br />
+      <div>
+        <label for="Country">Country:</label>
+        <select name="Country" id="Country">
+          <option selected>Select an Option</option>
+          <option value="Ind">India</option>
+          <option value="Nep">Nepal</option>
+          <option value="USA">USA</option>
+          <option value="Can">Canada</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="textarea">Message:</label>
+        <textarea name="textarea" id="textarea"></textarea>
+      </div>
+      <br />
+      <input type="checkbox" name="newsletter" id="newsletter" /><label
+        for="newsletter"
+        >Subscribe?</label
+      ><br /><br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

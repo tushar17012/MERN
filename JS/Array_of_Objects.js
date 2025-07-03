@@ -38,3 +38,51 @@ console.log(students[1]); // Updated Priya's grade
 // Deleting an Object
 students.splice(2, 1); // Removes 1 element at index 2 (Rahul)
 console.log(students);
+
+
+//Array Object Literals
+let books = [
+    {
+        "id": 1,
+        "name": "The Russian",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 2,
+        "name": "Just as I Am",
+        "type": "non-fiction",
+        "available": false
+    },
+    {
+        "id": 3,
+        "name": "The Vanishing Half",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 4,
+        "name": "The Midnight Library",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 5,
+        "name": "Untamed",
+        "type": "non-fiction",
+        "available": true
+    },
+    {
+        "id": 6,
+        "name": "Viscount Who Loved Me",
+        "type": "fiction",
+        "available": true
+    }
+];
+console.log(books[0].name); // Output: The Russian
+
+for (let i = 0; i < books.length; i++) {
+    let result = books.filter(book => book.type === "fiction");
+    console.log(`${books[i].name} is a ${books[i].type} book and is ${books[i].available ? "available" : "not available"}`);
+    console.log(result);
+}

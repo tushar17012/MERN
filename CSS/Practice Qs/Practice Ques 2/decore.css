@@ -1,0 +1,17 @@
+*{
+  background-color: wheat;
+  text-align: center;
+  font-family: Georgia;
+}
+p{
+  color: brown;
+  line-height: 30px;
+}
+a{
+  text-decoration: none;
+  color: green;
+}
+button{
+  background-color: white;
+  color: blueviolet;
+}

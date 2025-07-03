@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      /* Flex container styling */
+      #First_div_container {
+        display: flex; /*Use flexbox layout */
+        flex-direction: column-reverse; /* Children are aligned in a row */
+        align-items: center; /* Center children vertically */
+        justify-content: space-evenly; /* Space items evenly horizontally */
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        padding: 20px;
+        margin: 20px;
+        transition: flex-direction 0.2s ease-in;
+      }
+
+      /* Change flex direction when the container is clicked (active state) */
+      #First_div_container:active {
+        flex-direction: column; /* Change direction on click */
+      }
+
+      /* Common styles for all child divs */
+      .child-div {
+        width: 300px; /* Adjusted width */
+        height: 100px; /* Adjusted height */
+        border: 2px solid black;
+        background-color: lightgray;
+        display: flex; /* Use flexbox for centering text */
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0; /* Vertical spacing between child divs */
+        transition: background-color 0.1s ease-in;
+      }
+
+      /* Change background color on hover */
+      .child-div:hover {
+        background-color: brown; /* Change color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="First_div_container">
+      <div class="child-div">Child 1</div>
+      <div class="child-div">Child 2</div>
+      <div class="child-div">Child 3</div>
+    </div>
+  </body>
+</html>

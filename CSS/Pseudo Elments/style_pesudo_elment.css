@@ -1,0 +1,44 @@
+.quote::before {
+  content: "“";
+  font-size: 2em;
+  color: gray;
+  margin-right: 0.25em;
+}
+.quote::after {
+  content: "”";
+  font-size: 2em;
+  color: gray;
+  margin-left: 0.25em;
+}
+
+p::first-line {
+  font-weight: bold;
+  color: blue;
+}
+/* p::first-letter {
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+  float: left;
+  margin-right: 0.1em;
+} */
+::selection {
+  background-color: yellow;
+  color: black;
+}
+/* -------- */
+
+button::before {
+  content: "Click Me: ";
+  font-weight: bold;
+  color: green;
+}
+
+button::after {
+  content: "✔";
+  font-size: 1.5em;
+  color: green;
+  margin-left: 0.5em;
+}
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .BOX {
+        height: 100px;
+        width: 300px;
+        display: flex;
+        background-color: pink;
+
+        animation-name: fontAnimation;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes fontAnimation {
+        0% {
+          font-size: 50px;
+          background-color: aquamarine;
+        }
+        50% {
+          font-size: 25px;
+          background-color: rgb(247, 0, 0);
+        }
+        100% {
+          font-size: 100px;
+          background-color: rgb(9, 255, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div class="BOX">This is a Box</div>
+  </body>
+</html>

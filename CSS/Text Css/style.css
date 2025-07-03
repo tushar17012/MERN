@@ -1,0 +1,11 @@
+h1{
+  text-align: center;
+  border: solid;
+  width: 10%;
+  background-color: aquamarine;
+  font-family: cursive;
+  text-decoration: wavy line-through;
+}
+p{
+  line-height: 1.5;
+}

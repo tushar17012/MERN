@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create the following layout using CSS Grid</title>
+    <style>
+      /* General container styling */
+      .container {
+        margin: 0;
+        padding: 0;
+        border: 2px solid black;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+      }
+
+      /* General child container styling */
+      .child-container {
+        border: 2px solid black;
+        background-color: pink;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Specific grid areas for each child */
+      #First-child-container {
+        grid-column: 1 / span 12;
+      }
+
+      #Second-child-container {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 10;
+      }
+
+      #third-child-container {
+        grid-column: 4 / span 6;
+        grid-row: 2 / span 1;
+      }
+
+      #Fourth-child-container {
+        grid-column: 10 / span 3;
+        grid-row: 2 / span 10;
+      }
+
+      #Fifth-child-container {
+        grid-column: 4 / span 6;
+        grid-row: 3 / span 9;
+      }
+
+      #Sixth-child-container {
+        grid-column: 1 / span 12;
+        grid-row: 12;
+      }
+
+      /* Responsive design for smaller screens */
+      @media (max-width: 720px) {
+        #First-child-container {
+          grid-column: 1 / span 12;
+        }
+
+        #third-child-container {
+          grid-column: 1 / span 12;
+          grid-row: 2;
+        }
+
+        #Second-child-container {
+          grid-column: 1 / span 3;
+          grid-row: 3 / span 9;
+        }
+
+        #Fifth-child-container {
+          grid-column: 4 / span 9;
+          grid-row: 3 / span 9;
+        }
+
+        #Fourth-child-container {
+          grid-column: 1 / span 3;
+          grid-row: 12;
+        }
+
+        #Sixth-child-container {
+          grid-column: 4 / span 9;
+          grid-row: 12;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child-container" id="First-child-container">
+        Header (1 row, 12 columns)
+      </div>
+      <div class="child-container" id="Second-child-container">
+        Sidebar (10 rows, 3 columns)
+      </div>
+      <div class="child-container" id="third-child-container">
+        Navigation (1 row, 6 columns)
+      </div>
+      <div class="child-container" id="Fourth-child-container">
+        Ads (10 rows, 3 columns)
+      </div>
+      <div class="child-container" id="Fifth-child-container">
+        Main (9 rows, 6 columns)
+      </div>
+      <div class="child-container" id="Sixth-child-container">
+        Footer (1 row, 12 columns)
+      </div>
+    </div>
+  </body>
+</html>

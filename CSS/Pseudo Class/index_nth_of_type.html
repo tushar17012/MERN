@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-of-type Example</title>
+    <style>
+        /* Style the second paragraph in each section */
+        section p:nth-of-type(2) {
+            color: red;
+        }
+
+        /* Style every even table row */
+        table tr:nth-of-type(even) {
+            background-color: lightblue;
+        }
+
+        /* Style the first div in a container */
+        .container div:nth-of-type(1) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <p>First paragraph.</p>
+        <p>Second paragraph.</p>
+        <p>Third paragraph.</p>
+    </section>
+
+    <table>
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2</td></tr>
+        <tr><td>Row 3</td></tr>
+        <tr><td>Row 4</td></tr>
+    </table>
+
+    

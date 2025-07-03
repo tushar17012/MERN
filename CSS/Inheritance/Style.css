@@ -1,0 +1,21 @@
+ * {
+   text-transform: uppercase;
+ }
+
+ div {
+   background-color: yellow;
+ }
+
+ form{
+  background-color: red;
+ }
+
+ input,
+ button {
+   background-color: inherit;
+ }
+
+ button:hover{
+  background-color: black;
+  color: white;
+ }

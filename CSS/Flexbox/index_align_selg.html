@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Self Example</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around; /* Horizontal distribution */
+        align-items: center; /* Align all items vertically */
+        height: 300px;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      /* Override the default alignment for one item */
+      .align-end {
+        align-self: flex-end; /* This item aligns at the bottom */
+        flex-grow: 2;
+      }
+      #item_first{
+        flex-basis: 120px;
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="item_first">Item 1</div>
+      <div class="item align-end">Item 2 (align-end)</div>
+      <div class="item">Item 3</div>
+    </div>
+  </body>
+</html>

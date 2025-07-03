@@ -143,3 +143,47 @@ function findMinimum(arr) {
   return arr.reduce((min, current) => (current < min ? current : min), arr[0]);
 }
 console.log("Minimum in the array:", findMinimum(min_Arr));
+
+//Square and sum the array elements using the arrow function and then find the average of the array.
+let arr_Square = [1, 2, 3, 4, 5];
+let squareAndSum = (arr) => {
+  let sum = arr.reduce((acc, num) => acc + num * num, 0);
+  return sum / arr.length;
+};
+console.log("Average of squared elements:", squareAndSum(arr_Square));
+
+//Create a new array using the map function whose each element is equal to the original element plus  5.
+let arr_Map = [1, 2, 3, 4, 5];
+let newArr = arr_Map.map(num => num + 5); 
+console.log("New array with each element plus 5:", newArr);
+
+//Create a new array using the filter function that contains only the even numbers from the original array.
+
+let arr_Filter = [1, 2, 3, 4, 5, 6];
+let evenNumbers = arr_Filter.filter(num => num % 2 === 0); 
+console.log("Even numbers in the array:", evenNumbers);
+
+//Create a new array whose elements are in uppercase of words present in the original array.
+
+let arr_Uppercase = ["hello", "world", "javascript"];
+let upperCaseWords = arr_Uppercase.map(word => word.toUpperCase());
+console.log("Uppercase words in the array:", upperCaseWords);
+
+//Write a function called mergeObjects that accepts two objects and returns a new object which contains all the keys and values of the first object and second object.
+function mergeObjects(obj1, obj2) {
+  return { ...obj1, ...obj2 };
+}
+let obj1 = { a: 1, b: 2 };
+let obj2 = { c: 3, d: 4 };
+let mergedObject = mergeObjects(obj1, obj2);
+console.log("Merged Object:", mergedObject);
+
+//Write a function called doubleAndReturnArgs which accepts an array and a variable number of arguments. The function should return a new array with the original array values and all of the additional arguments doubled.
+function doubleAndReturnArgs(arr, ...args) {
+  let doubledArgs = args.map(arg => arg * 2);
+  return [...arr, ...doubledArgs];
+}
+let originalArray = [1, 2, 3];
+let additionalArgs = [4, 4]; 
+let resultArray = doubleAndReturnArgs(originalArray, ...additionalArgs);
+console.log("Resulting Array:", resultArray);
