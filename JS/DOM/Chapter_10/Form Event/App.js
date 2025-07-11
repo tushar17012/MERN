@@ -6,3 +6,11 @@ form.addEventListener("submit", function (e) {
   console.log("Form submitted successfully!"); // Log message
 }); // Listen for form submission
 
+
+let user_inp = document.querySelector('input');
+
+user_inp.addEventListener('change', function(){
+  console.log('Change has been Triggered');
+  console.log(`Input value is ${this.value}`);
+});
+
